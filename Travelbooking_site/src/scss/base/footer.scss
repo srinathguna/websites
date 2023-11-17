@@ -1,0 +1,100 @@
+.wrapper {
+    footer {
+        margin-top: 80px;
+        .heading{
+            text-align: center;
+            margin: 0;
+            p{
+                color: $primary_color;
+            }
+        }
+        .footer-details{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 15px;
+            margin-top: 80px;
+            .footer-logo{
+                flex: 0 0 24%;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                .logo{
+                    display: flex;
+                    img{
+                        max-width: 80px;
+                    }
+                    .logo-caption{
+                        width: 100%;
+                        h5{
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+                        p{
+                            font-size: 14px;
+                            font-weight: 400; 
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }  
+            .company-sitemap{
+                flex: 0 0 74%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            ul{
+                margin-bottom: 20px;
+                h4{
+                  font-size: 16px;
+                  font-weight: 600;  
+                  color: $black;
+                  margin-bottom:20px;
+                }
+                li{
+                    margin-top: 10px;
+                    transition: all 0.5s;
+                    a{
+                        line-height: 22px;
+                        &:hover{
+                            color: $primary_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(width <=1024px) {
+    .wrapper{
+        footer{
+            .footer-details{
+                 ul{
+                    flex: 0 0 33%;
+                 }
+            }
+        } 
+    } 
+}
+
+@media(width <=820px) {
+    .wrapper{
+        footer{
+            .footer-details{
+                .footer-logo,
+                .company-sitemap{
+                    flex: 0 0 100%;
+                }
+            }
+        } 
+    } 
+}
+//
+@media(width <=640px) {
+    .wrapper footer .footer-details .company-sitemap ul {
+        flex: 0 0 100%;
+    }
+}

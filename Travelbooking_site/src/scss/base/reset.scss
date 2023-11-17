@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+button{
+    outline: none;
+    border: none;
+}
+img{
+    height: 100%;
+    width: 100%;     
+}
+a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
