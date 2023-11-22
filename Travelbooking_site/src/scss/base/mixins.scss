@@ -45,6 +45,14 @@
 }
 
 @media(width <= 640px){
+    .heading{
+        p {
+            line-height: 22px;
+            br{
+                display: none;
+            }
+        }
+    }
     .card-list{
         .card{
             flex: 0 0 48%;

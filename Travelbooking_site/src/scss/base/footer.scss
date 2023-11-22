@@ -23,10 +23,11 @@
                 .logo{
                     display: flex;
                     img{
-                        max-width: 80px;
+                        max-width: 50px;
                     }
                     .logo-caption{
                         width: 100%;
+                        margin-left: 15px;
                         h5{
                             font-size: 18px;
                             font-weight: 600;
@@ -57,6 +58,7 @@
                     margin-top: 10px;
                     transition: all 0.5s;
                     a{
+                        font-size: 16px;
                         line-height: 22px;
                         &:hover{
                             color: $primary_color;

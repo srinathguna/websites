@@ -8,3 +8,8 @@ myElement.addEventListener('click', function() {
   this.classList.toggle('active');
   header.classList.toggle('active');
 });
+
+//
+document.getElementById("search-btn").onclick = function () {
+    location.href = "categories_list.html";
+};

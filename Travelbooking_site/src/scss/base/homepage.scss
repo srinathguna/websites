@@ -200,11 +200,13 @@
         .ad-banner {
             .ad-banner-details {
                 padding-left: 40px;
+
                 h4 {
                     font-size: 22px;
                     line-height: 30px;
                 }
-                .download-btn{
+
+                .download-btn {
                     font-size: 14px;
                     padding: 12px 12px;
                     margin-top: 15px;
@@ -260,5 +262,73 @@
                 }
             }
         }
+    }
+}
+
+@media(width <=768px) {
+    .wrapper {
+        .dream-vacation,
+        .popular-hotel,
+        .next-trip,
+        .ad-banner,
+        footer {
+            margin-top: 25px;
+            .card-list {
+                .card {
+                    span.name {
+                        font-size: 16px;
+                        margin: 10px 0 0 0;
+                    }
+                    span.desc {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        //
+        .next-trip{
+            .card-list{
+                .card{
+                    .card-details{
+                        .desc{
+                            display: none;
+                        }
+                    } 
+                } 
+            } 
+        } 
+        //
+        .ad-banner {
+            img {
+                height: 180px;
+                object-fit: cover;
+            }
+
+            .ad-banner-details {
+                width: 100%;
+                left: 0;
+                padding: 0 20px;
+                text-align: center;
+                align-items: center;
+
+                h4 {
+                    font-size: 16px;
+                    br{
+                        display: none;
+                    }
+                }
+            }
+        }
+       footer{
+        .footer-details{
+            ul{
+                li{
+                   a {
+                    font-size: 14px;
+                   }
+                } 
+            } 
+        } 
+       } 
     }
 }

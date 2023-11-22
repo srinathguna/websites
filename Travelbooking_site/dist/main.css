@@ -81,6 +81,12 @@ body {
   }
 }
 @media (width <= 640px) {
+  .heading p {
+    line-height: 22px;
+  }
+  .heading p br {
+    display: none;
+  }
   .card-list .card {
     flex: 0 0 48%;
   }
@@ -94,10 +100,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
 }
 header .logo {
-  max-width: 80px;
-  height: 80px;
+  max-width: 50px;
+  height: 50px;
   width: 100%;
 }
 header .nav {
@@ -107,6 +115,7 @@ header .nav {
   justify-content: space-between;
 }
 header .nav li a {
+  font-size: 16px;
   transition: all 0.5ms;
 }
 header .nav li a:hover {
@@ -141,6 +150,15 @@ header .header-actions .signin {
   margin: 0 0 5px 0;
 }
 
+@media (width <= 1366px) {
+  header .header-actions button {
+    height: 34px;
+    padding: 6px 12px;
+  }
+  header .nav li a {
+    font-size: 14px;
+  }
+}
 @media (width <= 1024px) {
   header {
     flex-direction: column;
@@ -254,10 +272,11 @@ header .header-actions .signin {
   display: flex;
 }
 .wrapper footer .footer-details .footer-logo .logo img {
-  max-width: 80px;
+  max-width: 50px;
 }
 .wrapper footer .footer-details .footer-logo .logo .logo-caption {
   width: 100%;
+  margin-left: 15px;
 }
 .wrapper footer .footer-details .footer-logo .logo .logo-caption h5 {
   font-size: 18px;
@@ -288,6 +307,7 @@ header .header-actions .signin {
   transition: all 0.5s;
 }
 .wrapper footer .footer-details ul li a {
+  font-size: 16px;
   line-height: 22px;
 }
 .wrapper footer .footer-details ul li a:hover {
@@ -514,6 +534,53 @@ header .header-actions .signin {
     font-size: 12px;
     color: #fff;
     line-height: 20px;
+  }
+}
+@media (width <= 768px) {
+  .wrapper .dream-vacation,
+  .wrapper .popular-hotel,
+  .wrapper .next-trip,
+  .wrapper .ad-banner,
+  .wrapper footer {
+    margin-top: 25px;
+  }
+  .wrapper .dream-vacation .card-list .card span.name,
+  .wrapper .popular-hotel .card-list .card span.name,
+  .wrapper .next-trip .card-list .card span.name,
+  .wrapper .ad-banner .card-list .card span.name,
+  .wrapper footer .card-list .card span.name {
+    font-size: 16px;
+    margin: 10px 0 0 0;
+  }
+  .wrapper .dream-vacation .card-list .card span.desc,
+  .wrapper .popular-hotel .card-list .card span.desc,
+  .wrapper .next-trip .card-list .card span.desc,
+  .wrapper .ad-banner .card-list .card span.desc,
+  .wrapper footer .card-list .card span.desc {
+    font-size: 12px;
+  }
+  .wrapper .next-trip .card-list .card .card-details .desc {
+    display: none;
+  }
+  .wrapper .ad-banner img {
+    height: 180px;
+    object-fit: cover;
+  }
+  .wrapper .ad-banner .ad-banner-details {
+    width: 100%;
+    left: 0;
+    padding: 0 20px;
+    text-align: center;
+    align-items: center;
+  }
+  .wrapper .ad-banner .ad-banner-details h4 {
+    font-size: 16px;
+  }
+  .wrapper .ad-banner .ad-banner-details h4 br {
+    display: none;
+  }
+  .wrapper footer .footer-details ul li a {
+    font-size: 14px;
   }
 }
 .container {
